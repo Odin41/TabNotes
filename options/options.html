@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TabNote options</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="options.css" rel="stylesheet">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <div class="card" id="app">
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="form-check">
+                    <input id="removeOnCloseTab" type="checkbox" checked class="form-check-input"/>
+                    <label class="form-check-label" for="removeOnCloseTab">Очищать при закрытие вкладки</label>
+                </div>
+            </div>
+            <div class="row">
+                <h6>Список сохраненных заметок</h6>
+                <small class="text-body-secondary">зачеркнуты закрытые вкладки</small>
+            </div>
+            <div class="row" id="list">
+                
+            </div>
+        </div>
+        <div class="card-footer text-body-secondary">
+            <button class="btn btn-primary  form-control-sm" id="save">Сохранить и закрыть</button>
+        </div>
+    </div>
+  </body>
+</html>
